@@ -1,0 +1,75 @@
+h1 {
+	text-align: center;
+}
+.centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -130px;
+	margin-top: -35px;
+}
+.textfield {
+	position: relative;
+	padding: 10px 15px;
+	border: 1px solid #e3f2fd;
+	border-radius: 5px;
+	box-shadow: none;
+}
+.centered span {
+	position: absolute;
+	z-index: 1;
+	background-color: #fff;
+	top: 13px;
+	left: 15px;
+	color: #a9a9a9;
+	padding: 0 5px;
+}
+.textfield:focus {
+	border: 1px solid #0d47a1;
+}
+input:focus ~ span,
+input:not(:focus):valid ~ span {
+	top: -8px;
+}
+.textfield,
+span {
+	transition: ease-in-out 0.2s all;
+	-webkit-transition: ease-in-out 0.2s all;
+	-moz-transition: ease-in-out 0.2s all;
+	-o-transition: ease-in-out 0.2s all;
+}
+.button {
+	background-color: white;
+	width: 201px;
+	color: black;
+	border: 2px solid #008cba;
+	border-radius: 5px;
+	padding: 12px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 14px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: #008cba;
+	color: white;
+}
+.bottom-text {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background: rgb(158, 157, 157);
+	color: rgb(8, 8, 8);
+	text-align: center;
+}
+.download {
+	text-align: center;
+	position: absolute;
+	top: 70%;
+	left: 48%;
+	transform: translate(-50%, -50%);
+}
